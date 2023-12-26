@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        *{
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+    font-size:x-large;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    font-size: large;
+}
+.medsos {
+    padding:5px 0;
+    background-color: black;
+}
+.medsos ul li {
+    display: inline-block;
+    color:cyan;
+    margin-right: 10px;
+}
+.container{
+    width:80%;
+    margin: 0 auto;
+    font-size: xx-large;
+}
+.container:after {
+    content:'';
+    display: block;
+    clear: both;
+}
+header h1 {
+    float: left;
+    padding:15px 0;
+    color: black;
+}
+header ul {
+    float: right;
+}
+header ul li{
+    display: inline-block;
+}
+header ul li a{
+    padding:25px 20px;
+    display: inline-block;
+}
+header ul li a:hover {
+    background-color: cyan;
+    color: #fff;
+}
+.active {
+    background-color: cyan;
+    color: #fff;
+}
+.banner {
+    height: 150vh;
+    background-image: url('../img/S&F\ SEAFOOD.jpeg');
+    background-size: cover ;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 135%;
+}
+.banner h2 {
+    color: #fff;
+    z-index: 1;
+    padding: 20px 25px;
+    border:3px solid #fff;
+}
+section {
+    padding: 10px 50px;
+}
+section h3{
+    text-align: center;
+    padding: 20px 0;
+    color: cyan;
+    margin-bottom: 25px;
+}
+.about {
+    padding-top: 120px;
+    padding-bottom: 200px;
+    align-items: center;
+}
+.about p{
+    color:black;
+    word-spacing: 2px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.service{
+    background-color: grey;
+    padding-bottom: 10px;
+}
+.box {
+    color: black;
+}
+.box:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.box .col-4{
+    width:25%;
+    padding:25px;
+    box-sizing:border-box;
+    text-align: center;
+    float: left;
+}
+.icon {
+    width:90px;
+    height: 90px;
+    border: 3px solid;
+    border-radius: 80%;
+    text-align: center;
+    line-height: 90px;
+    font-size: 10px;
+    margin: 0 auto;
+}
+.box .col-4 h4 {
+    margin: 20px 0;
+}
+footer {
+    padding: 30px 0;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+.bg-loader {
+    background-color: #eee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-loader .loader {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    border-top-color: cyan;
+    border-right-color: cyan;
+    border-bottom-color: cyan;
+    animation: puterin .8s linear infinite;
+}
+.label {
+    background-color: cyan;
+    color: black;
+}
+
+.video{
+    margin-top: -150px;
+    margin-left: 370px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+
+.h2{
+    color :black;
+    text-align: center;
+}
+
+
+@keyframes puterin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 768px) {
+   .container {
+       width:90%;
+   }
+   header h1 {
+       text-align: center;
+       float: none;
+   }
+   header ul {
+       text-align: center;
+       float: none;
+   }
+   .box .col-4 {
+       text-align: center;
+       float:none;
+       margin-bottom: 20px;
+   }
+}
+    </style>
+    <meta name="viewport" content="width=device-widht, inital-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--loader-->
+    <div class="bg-loader">
+       <div class="loader">
+
+       </div> 
+    </div>
+
+    <!-- header -->
+    <div class="medsos">
+        <div class="container">
+            <ul>
+                <li><a href="https://api.whatsapp.com/send?phone=6289506440876"><i class="fab fa-whatsapp"></i></a></li>  
+                <li><a href="https://www.instagram.com/rainhard_benjamin/"><i class="fab fa-instagram"></i></a></li> 
+            </ul>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">S&F SEAFOOD</a></h1>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="service.html">SERVICE</a></li>
+                <li class="active"><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+
+     <!--label-->
+     <section class="label">
+        <div class="container">
+            <p>Home / Contact</p>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section class about="about">
+        <div class container="container">
+            <h3>CONTACT INFO</h3>
+            <div class="box">
+                <div class="col-4">
+                    <h4>Address</h4>
+                    <p>Jalan Ganggeng X No.54, Sungai Bambu, Tanjung Priok, Jakarta Utara</p>
+                </div>
+                <div class="col-4">
+                    <h4>Email</h4>
+                    <p>rainhardben25@gmail.com</p>
+                </div>
+                <div class="col-4">
+                    <h4>Telp.</h4>
+                    <p>-</p>
+                </div>
+                <div class="col-4">
+                    <h4>HP</h4>
+                    <p>0895-0644-0876</p>
+                </div>
+            </div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3967.0793419610027!2d106.88040291383913!3d-6.120022561715001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1fc475d45d37%3A0xb7602bc1b5506961!2sJl.%20Ganggeng%20X%2C%20RT.1%2FRW.7%2C%20Sungai%20Bambu%2C%20Tj.%20Priok%2C%20Kota%20Jkt%20Utara%2C%20Daerah%20Khusus%20Ibukota%20Jakarta!5e0!3m2!1sen!2sid!4v1638021987931!5m2!1sen!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>  
+    </section>
+
+    <!--footer-->
+    <footer>
+        <div class="container">
+           <small>Copyright &copy; 2021 - S&F SEAFOOD, All Rights Reserved.</small> 
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".bg-loader").hide();   
+        })
+    </script>
+
+</body>
+</html>

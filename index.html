@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <style>
+        *{
+    padding:0;
+    margin:0;
+    font-family: sans-serif;
+    font-size:x-large;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+    font-size: large;
+}
+.medsos {
+    padding:5px 0;
+    background-color: black;
+}
+.medsos ul li {
+    display: inline-block;
+    color:cyan;
+    margin-right: 10px;
+}
+.container{
+    width:80%;
+    margin: 0 auto;
+    font-size: xx-large;
+}
+.container:after {
+    content:'';
+    display: block;
+    clear: both;
+}
+header h1 {
+    float: left;
+    padding:15px 0;
+    color: black;
+}
+header ul {
+    float: right;
+}
+header ul li{
+    display: inline-block;
+}
+header ul li a{
+    padding:25px 20px;
+    display: inline-block;
+}
+header ul li a:hover {
+    background-color: cyan;
+    color: #fff;
+}
+.active {
+    background-color: cyan;
+    color: #fff;
+}
+.banner {
+    height: 150vh;
+    background-image: url('../img/S&F\ SEAFOOD.jpeg');
+    background-size: cover ;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 135%;
+}
+.banner h2 {
+    color: #fff;
+    z-index: 1;
+    padding: 20px 25px;
+    border:3px solid #fff;
+}
+section {
+    padding: 10px 50px;
+}
+section h3{
+    text-align: center;
+    padding: 20px 0;
+    color: cyan;
+    margin-bottom: 25px;
+}
+.about {
+    padding-top: 120px;
+    padding-bottom: 200px;
+    align-items: center;
+}
+.about p{
+    color:black;
+    word-spacing: 2px;
+    line-height: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.service{
+    background-color: grey;
+    padding-bottom: 10px;
+}
+.box {
+    color: black;
+}
+.box:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.box .col-4{
+    width:25%;
+    padding:25px;
+    box-sizing:border-box;
+    text-align: center;
+    float: left;
+}
+.icon {
+    width:90px;
+    height: 90px;
+    border: 3px solid;
+    border-radius: 80%;
+    text-align: center;
+    line-height: 90px;
+    font-size: 10px;
+    margin: 0 auto;
+}
+.box .col-4 h4 {
+    margin: 20px 0;
+}
+footer {
+    padding: 30px 0;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+}
+.bg-loader {
+    background-color: #eee;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-loader .loader {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    border-top-color: cyan;
+    border-right-color: cyan;
+    border-bottom-color: cyan;
+    animation: puterin .8s linear infinite;
+}
+.label {
+    background-color: cyan;
+    color: black;
+}
+
+.video{
+    margin-top: -150px;
+    margin-left: 370px;
+    margin-right: 100px;
+    margin-bottom: 100px;
+}
+
+.h2{
+    color :black;
+    text-align: center;
+}
+
+
+@keyframes puterin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 768px) {
+   .container {
+       width:90%;
+   }
+   header h1 {
+       text-align: center;
+       float: none;
+   }
+   header ul {
+       text-align: center;
+       float: none;
+   }
+   .box .col-4 {
+       text-align: center;
+       float:none;
+       margin-bottom: 20px;
+   }
+}
+    </style>
+    <meta name="viewport" content="width=device-widht, inital-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--loader-->
+    <div class="bg-loader">
+       <div class="loader">
+       </div> 
+    </div>
+
+    <!-- header -->
+    <div class="medsos">
+        <div class="container">
+            <ul>
+              <li><a href="https://api.whatsapp.com/send?phone=6289506440876"><i class="fab fa-whatsapp"></i></a></li>  
+              <li><a href="https://www.instagram.com/rainhard_benjamin/"><i class="fab fa-instagram"></i></a></li>  
+            </ul>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <h1><a href="index.html">S&F SEAFOOD</a></h1>
+            <ul>
+                <li class="active"><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="service.html">SERVICE</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!--banner-->
+    <section class="banner">
+        <h2><strong>WELCOME TO S&F SEAFOOD</strong> </h2>
+    </section>
+
+    <!--about-->
+    <section class="about">
+        <div class="container">
+            <h3>ABOUT</h3>
+            <p>S&F Seafood (Simple & Fast Seafood) adalah sebuah usaha bisnis online yang bergerak di bidang hasil laut, dimana usaha ini menjadi perantara bagi para nelayan dan para pembeli dalam jual-beli berbagai hasil laut secara mudah dan cepat, mulai dari ikan, udang, cumi-cumi, dan sebagainya.
+                Usaha S&F Seafood menawarkan biaya dalam jumlah kecil bagi para nelayan yang ingin membuka toko online di S&F Seafood untuk memudahkan para nelayan mendapatkan pembeli dan meningkatkan pendapatan para nelayan. Oleh karena itu, para nelayan tak perlu ragu untuk membuka toko online di S&F Seafood karena usaha ini menjamin para nelayan hanya mengeluarkan biaya dalam jumlah kecil untuk mendapatkan banyak manfaat.
+                Usaha S&F Seafood juga memberikan kemudahan bagi para pembeli yang ingin membeli hasil laut, hanya dengan cara membeli secara online lewat S&F Seafood. Dengan demikian, para pembeli tidak perlu lagi repot-repot pergi ke pasar untuk membeli hasil laut untuk mendapatkan hasil laut secara mudah dan juga cepat.
+                <strong>Jadi, tunggu apalagi ayo bertransaksi jual beli hasil laut di S&F Seafood sekarang!</strong>
+            </p>
+        </div>
+    </section>
+
+    <!--service-->
+    <section class="service">
+        <div class="container">
+         <h3>SERVICE</h3> 
+         <div class="box">
+             <div class="col-4">
+                 <div class="icon"><i class="fas fa-shopping-cart"></i></div>
+                 <h4>BELANJA</h4>
+             </div>
+             <div class="col-4">
+                <div class="icon"><i class="fas fa-store"></i></div>
+                <h4>BUKA TOKO ONLINE</h4>
+            </div>
+            <div class="col-4">
+                <div class="icon"><i class="fas fa-question"></i></div>
+                <h4>BANTUAN</h4>
+            </div>
+            <div class="col-4">
+                <div class="icon"><i class="fas fa-ellipsis-h"></i></div>
+                <h4>LAINNYA</h4>
+            </div>
+         </div>  
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <div class="container">
+           <small>Copyright &copy; 2021 - S&F SEAFOOD, All Rights Reserved.</small> 
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".bg-loader").hide();   
+        })
+    </script>
+
+</body>
+</html>
